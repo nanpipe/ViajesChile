@@ -1,0 +1,9 @@
+.bg-light{
+    background-color: transparent !important;
+    color: black;
+
+}
+
+div#navbarNav ul li a{
+    color: #fff;
+}
