@@ -9,3 +9,10 @@ div#navbarNav ul li a{
 }
 
 
+
+
+.card-img-top {
+
+    height: 30vh;
+    object-fit: cover;
+    }
