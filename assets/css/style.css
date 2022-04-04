@@ -4,15 +4,32 @@
 
 }
 
+.bg-black{
+    background-color: #000;
+}
+
 div#navbarNav ul li a{
     color: #fff;
 }
 
-
-
-
 .card-img-top {
-
+    width: 100%;
     height: 30vh;
-    object-fit: cover;
+    object-fit:fill;
     }
+    
+
+
+    .quick-400{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    
+    .quick-700{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+    }
+
+.bg-azulito{
+    background-color: #08CCEE;
+}

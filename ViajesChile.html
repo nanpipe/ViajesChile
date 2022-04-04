@@ -14,22 +14,19 @@
     <!--mis estilos-->
     <link rel="stylesheet" href="assets/css/style.css">
     <!--my fonts-->
-    <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Viajes Chile</title>
 </head>
 
-<body>
+<body class="bg-black">
 
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top quick-400">
         
         <div class="container px-5 py-0" >
 
@@ -40,16 +37,16 @@
             <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end pe-4 " id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="#carrusel">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
+                        <a class="nav-link" href="#quienes">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Contacto</a>
+                        <a class="nav-link " href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +54,7 @@
     </nav>
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -84,27 +81,27 @@
         </button>
       </div>
 
-      <section class="container py-3">
-        <h2 class="text-center">QUIENES SOMOS</h2>
-        <div class="row">
-          <div class="col-4">
-            <div style="text-align: center;">
+      <section id="quienes"  class="container py-5 quick-400">
+        <h2 class="text-center text-white quick-700 my-3">QUIENES SOMOS</h2>
+        <div class="row my-2">
+          <div class="col-4 text-white">
+            <div style="text-align: center;" class="bg-azulito">
               <i class="fa-solid fa-plane"></i>
             </div>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque blanditiis quibusdam vitae aliquam vero cumque, impedit, quia eveniet ipsam voluptate incidunt error magnam pariatur veniam minus porro voluptas temporibus numquam!</p>
           </div>
 
-          <div class="col-4">
+          <div class="col-4 text-white">
             
-            <div style="text-align: center;"  >
+            <div style="text-align: center;" class="bg-azulito"  >
               <i class="fa-solid fa-mountain"></i>
             </div>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque blanditiis quibusdam vitae aliquam vero cumque, impedit, quia eveniet ipsam voluptate incidunt error magnam pariatur veniam minus porro voluptas temporibus numquam!</p>
           </div>
 
 
-          <div class="col-4">
-            <div style="text-align: center;">
+          <div class="col-4 text-white">
+            <div style="text-align: center;" class="bg-azulito">
               <i class="fa-solid fa-route"></i>
             </div>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque blanditiis quibusdam vitae aliquam vero cumque, impedit, quia eveniet ipsam voluptate incidunt error magnam pariatur veniam minus porro voluptas temporibus numquam!</p>
@@ -113,15 +110,15 @@
         </div>
       </section>
 
-      <section class="four-cards container  px-5 px-md-0">
-        <h2 class="text-center">RECETAS RELACIONADAS</h2>
+      <section id="destacados" class="four-cards container quick-400 px-5 px-md-0 py-4">
+        <h2 class="text-center text-white quick-700">DESTACADOS</h2>
         <div class="row d-flex justify-content-center">
         <div class="col-12 col-sm-6 col-lg-3 my-2 d-flex justify-content-center">
             <div class="card" style="width: 20rem;">
                 
-                <img src="/assets/img/card1.jpg" class="card-img-top" alt="Destino 1">
-                <div class="card-body">
-                  <h5 class="title-toggle card-title fs-5">PANQUEQUES CON MANJAR Y CREMA</h5>
+                <img src="/assets/img/card1.jpg" class="card-img-top " alt="Destino 1">
+                <div class="card-body bg-azulito">
+                  <h5 class="card-title fs-5">Nevados y Termales</h5>
                   <p class="card-description">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
                   
               </div>
@@ -129,10 +126,10 @@
           </div>
 
           <div class="col-12 col-sm-6 col-lg-3  my-2 d-flex justify-content-center">
-            <div class="card" style="width: 20rem; height: auto;">
-                <img src="/assets/img/card2.jpg" class="card-img-top" alt="Destino 2">
-                <div class="card-body">
-                  <h5 class="title-toggle card-title fs-5">TIRAMISÚ</h5>
+            <div class="card" style="width: 20rem;">
+                <img src="/assets/img/card2.jpg" class="card-img-top " alt="Destino 2">
+                <div class="card-body  bg-azulito">
+                  <h5 class="card-title fs-5">Montañas Misteriosas</h5>
                   <p class="card-description">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                   
               </div>
@@ -141,9 +138,9 @@
 
           <div class="col-12 col-sm-6 col-lg-3  my-2 d-flex justify-content-center">
             <div class="card" style="width: 20rem;">
-                <img src="/assets/img/card3.jpg" class="card-img-top" alt="Destino 3">
-                <div class="title-toggle card-body">
-                  <h5 class="card-title fs-5">PLATEADA</h5>
+                <img src="/assets/img/card3.jpg" class="card-img-top " alt="Destino 3">
+                <div class="card-body  bg-azulito">
+                  <h5 class="card-title fs-5">Desierto Mágico</h5>
                   <p class="card-description">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
                   
               </div>
@@ -152,9 +149,9 @@
 
         <div class="col-12 col-sm-6 col-lg-3  my-2 d-flex justify-content-center">
           <div class="card" style="width: 20rem;">
-              <img src="/assets/img/card4.jpg" class="card-img-top" alt="Destino 4">
-              <div class="title-toggle card-body">
-                <h5 class="card-title fs-5">PLATEADA</h5>
+              <img src="/assets/img/card4.jpg" class="card-img-top " alt="Destino 4">
+              <div class="card-body  bg-azulito">
+                <h5 class="card-title fs-5">Bosque Humedo</h5>
                 <p class="card-description">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
                 
             </div>
@@ -162,11 +159,43 @@
       </div>
     </section>
 
+    <section id="contacto" class="container my-4 quick-400" >
+      <h2 class="text-center text-white quick-700">CONTACTO</h2>
+      <form>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="formName" placeholder="Nombre">
+        </div>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="formAsunto" placeholder="Asunto">
+        </div>
+        <div class="mb-3 text-white">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="formMensaje" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn bg-azulito">Enviar</button>
+      </form>
+    </section>
 
-    <footer class="container-fluid bg-negrito  p-5  px-5 px-md-0 text-center">
-        <h3>Ricomida</h3>
+    <footer class="container-fluid bg-azulito text-white  p-5  px-5 px-md-0 text-center">
+      <div class="d-flex justify-content-evenly">
+      <div class="col-3">
+      <p class="quick-700 fs-3">Viajes Chile</p>
+      </div>
+        <div class="col-3">
+        <span>
+          <i class="fa-brands fa-github-square fa-xl"></i>
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+          <i class="fa-brands fa-twitter-square fa-xl"></i>
+          <i class="fa-brands fa-facebook-square fa-xl"></i>
+        </span>
+      </div>
+    </div>
 </footer>
-
+<div class="fixed-bottom container d-flex justify-content-lg-end mb-5">
+  <a  id="subir-up" role="button" href="#carrusel" class="btn btn-light"><i class="fa-solid fa-angle-up"></i></a>
+</div>
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -174,7 +203,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <!--mi script -->
-<script src="assets/js/script.js"></script>
+<script src="assets/js/scripts.js"></script>
 
 </body>
 
