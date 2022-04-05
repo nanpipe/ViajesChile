@@ -1,13 +1,17 @@
+$(function(){
+
+
+
  // Enables the Tooltip
- var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
- 
- 
+
+
  // Creates the animation to do a smooth scroll from all sections
 
- const links = document.querySelectorAll("ul.navbar-nav li a");
+const links = document.querySelectorAll("ul.navbar-nav li a");
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);
@@ -37,5 +41,5 @@ $(window).scroll(function(){
     }
   });
 
-
-  <script src="//embed.typeform.com/next/embed.js"></script>  
+});
+    
