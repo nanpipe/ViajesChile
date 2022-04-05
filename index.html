@@ -22,6 +22,7 @@
 </head>
 
 <body class="bg-black">
+  <!-- Transparent Navigation bar with fixed top-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top quick-400">
     <div class="container px-5 py-0" >
       <a id="nav-icon" class="navbar-brand py-0 text-white" href="#"><img src="/assets/img/viajes.svg" width="25px" alt="Kiwi standing on oval">Viajes Chile</a>
@@ -47,7 +48,7 @@
     </div>
   </nav>
   
-  
+  <!--Carrousel that automatically shows three pictures and fit the 100% of screen-->
   <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -75,6 +76,7 @@
     </button>
   </div>
   
+  <!--Who are we section, that must be hidden once MD breakpoint is activated-->
   <section id="quienes"  class="container py-5 px-5 px-md-0 quick-400 d-none d-md-block">
     <h2 class="text-center text-white quick-700 my-3">QUIENES SOMOS</h2>
     <div class="row my-2">
@@ -108,6 +110,7 @@
     </div>
   </section>
   
+  <!--Destacada section, Don't know what to say...-->
   <section id="destacados" class="four-cards container quick-400 px-5 px-md-0 py-4">
     <h2 class="text-center text-white quick-700">DESTACADOS</h2>
     <div class="row d-flex justify-content-center">
@@ -157,6 +160,7 @@
       </div>
     </section>
     
+    <!--Contact form that sends information-->
     <section id="contacto" class="container my-4 px-5 px-md-0 quick-400 " >
       <h2 class="text-center text-white quick-700">CONTACTO</h2>
       <form>
@@ -172,11 +176,11 @@
           <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
           <textarea class="form-control" id="formMensaje" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn bg-azulito">Enviar</button>
+        <button type="submit" class="btn bg-azulito" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enviar formulario">Enviar</button>
       </form>
     </section>
     
-    <footer class="container-fluid bg-azulito text-white  p-5  px-5 px-md-0 text-center">
+    <footer class="container-fluid bg-azulito text-white p-5  px-5 px-md-0 text-center">
       <div class="d-flex justify-content-evenly">
         <div class="col-6 col-md-3">
           <p class="quick-700 fs-3">Viajes Chile</p>

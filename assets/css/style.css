@@ -52,3 +52,8 @@ section#quienes div div p{
 .card-title, .card-description{
     color: #fff;
 }
+
+.tooltip-inner{
+    background-color: #fff;
+    color: #000;
+}

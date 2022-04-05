@@ -1,3 +1,12 @@
+ // Enables the Tooltip
+ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+ 
+ 
+ // Creates the animation to do a smooth scroll from all sections
+
  const links = document.querySelectorAll("ul.navbar-nav li a");
 
 for (const link of links) {
@@ -14,6 +23,7 @@ function clickHandler(e) {
   });
 }
 
+// I created a button to return to the top of the screen and hide the nav bar once you have scrolled over 100px
 
 $(window).scroll(function(){
     if($(this).scrollTop() > 100){
@@ -27,21 +37,3 @@ $(window).scroll(function(){
     }
   });
 
-
-
-/*
-$(document).ready(function(){
-    $("a").on('click', function(event) {
-    if (this.hash !== "") {
-    event.preventDefault();
-    var hash = this.hash;
-    $('html, body').animate({
-    scrollTop: $(hash).offset().top
-    }, 800, function(){
-    window.location.hash = hash;
-    });
-    }
-    });
-    });
-*/
-    
