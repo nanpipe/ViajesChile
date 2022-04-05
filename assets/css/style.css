@@ -10,6 +10,7 @@
 
 div#navbarNav ul li a{
     color: #fff;
+    padding-left: 10px;
 }
 
 .card-img-top {
@@ -32,4 +33,22 @@ div#navbarNav ul li a{
 
 .bg-azulito{
     background-color: #08CCEE;
+    color: #fff;
+}
+
+section#quienes div div p{
+    text-align: justify;
+    color: #fff !important;
+}
+
+.icons-link a{
+    color: #fff;
+}
+
+.bg-negrito-opaco{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.card-title, .card-description{
+    color: #fff;
 }
